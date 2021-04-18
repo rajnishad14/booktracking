@@ -146,6 +146,14 @@ main {
   border-radius: 5px;
 }
 
+.books-main section {
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
 /* .books-main article img {
   border-radius: 10px;
   height: 100%;
@@ -186,4 +194,27 @@ main {
   border-radius: 10px;
   border: transparent;
   font-size: large;
+}
+
+/* 
+search form
+*/
+
+.search {
+  text-align: center;
+  padding: 10px;
+}
+.search input {
+  border: 1px solid green;
+  height: 30px;
+  width: 70%;
+}
+
+.search button {
+  margin: 5px;
+  height: 30px;
+  border: 2px solid green;
+  background: transparent;
+  padding: 3px;
+  border-radius: 50%;
 }

@@ -11,7 +11,7 @@ const getStorageTheme = () => {
 
 const SideNavbar = () => {
   const [theme, setTheme] = useState(getStorageTheme())
-  const { books } = useContext(BookContext)
+  const { filterBooks } = useContext(BookContext)
 
   const toggleTheme = () => {
     if (theme === 'light-theme') {
@@ -32,7 +32,7 @@ const SideNavbar = () => {
         <section>
           <div className="side-nav-gid">
             <h3>My Books</h3>
-            <button>{books.length}</button>
+            <button>{filterBooks.length}</button>
           </div>
           <div className="side-nav-gid">
             <h3>Add new Book</h3>

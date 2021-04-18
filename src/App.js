@@ -2,6 +2,7 @@ import { useState } from 'react'
 import SideNavbar from './components/SideNavbar'
 import BooksMain from './components/BooksMain'
 import Modal from './components/Modal'
+import Search from './components/Search'
 
 import './App.css'
 
@@ -34,7 +35,8 @@ function App() {
             </button>
           </div>
         </nav>
-        <BooksMain sendModalval={sendModalval} />
+        <Search />
+        <BooksMain sendModalval={sendModalval} view={view} />
         <Modal modalVal={{ ...modalVal }} />
       </main>
     </>
