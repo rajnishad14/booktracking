@@ -142,10 +142,34 @@ main {
 .books-main article {
   display: inline-block;
   margin: 5px;
+  border: 2px solid black;
   border-radius: 5px;
 }
 
-.books-main article img {
+/* .books-main article img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+} */
+
+.img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  border: 3px solid black;
+  font-weight: bold;
+  background-color: black;
   border-radius: 10px;
 }
 

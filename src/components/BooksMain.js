@@ -18,10 +18,12 @@ const BooksMain = ({ sendModalval }) => {
               handleClick({ authour, genre, img, discription, title })
             }}
           >
-            <img src={img} alt="" />
+            <div className="img-container">
+              <img src={img} />
+              <p className="bottom-right">{genre}</p>
+            </div>
             <h4>{title}</h4>
             <p>{authour}</p>
-            <p>{genre}</p>
           </article>
         )
       })}
