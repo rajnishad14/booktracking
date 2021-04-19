@@ -17,13 +17,13 @@ const BookStoreContext = ({ children }) => {
   const search = (val) => {
     if (books.length !== 0) {
       const newBooksTitle = books.filter((book) =>
-        book.title.toLowerCase().includes(val)
+        book.title.toLowerCase().includes(val.toLowerCase())
       )
       const newBooksAuthor = books.filter((book) =>
-        book.authour.toLowerCase().includes(val)
+        book.authour.toLowerCase().includes(val.toLowerCase())
       )
       const newBooksGenre = books.filter((book) =>
-        book.genre.toLowerCase().includes(val)
+        book.genre.toLowerCase().includes(val.toLowerCase())
       )
 
       let tempBook = newBooksTitle.concat(newBooksAuthor)
